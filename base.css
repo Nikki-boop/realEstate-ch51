@@ -1,5 +1,5 @@
 /*global*/
-{
+*{
     margin:0;
     padding:0;
 }
@@ -12,7 +12,51 @@ h1, h2, h3{
 p{
     line-height: 2;
 }
+img{
+    max-width: 100%;
+}
 a{
-    color: black;
+    color: white;
     text-decoration: none;
+    text-align: center;
+}
+
+
+/*utilities*/
+.container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*header*/
+header.main-header{
+    background-image: url(realEstate-img-main/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 300px;
+}
+
+.menu-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 0px;
+
+}
+.link{
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+h1 a:hover{
+    color: rgb(51, 22, 22);
+
+}
+
+/*footer*/
+footer.main-footer{
+    text-align: center;
 }
