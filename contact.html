@@ -13,8 +13,8 @@
             <a href="index.html"><h1>RealEstate</h1>
             <nav>
                 <a href="about.html">About</a>
-                <a href="about.html">About</a>
-                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </div>
     </header>
@@ -47,10 +47,10 @@
             </fieldset>
             <fieldset>
                 <legend>Product information</legend>
-                <div class="form-control">  
+                <div class="form-control">
                     <label>Type:</label>
-                    <select><option value="1">---Option 1----</option></select>
-                </div>
+                    <select class="Select-input"><option value="1">---Option 1---</option></select>
+                </div> 
                 <div class="form-control">  
                     <label>Number:</label>
                     <input type="email">
@@ -58,21 +58,30 @@
             </fieldset>
             <fieldset>
                 <legend>Contact information</legend>
-                <div class=form-control">  
-                    <label>Email:</label>
-                    <input type="radio">
-                </div>
                 <div class="form-control">  
-                    <label>Phone:</label>
-                    <input type="radio">
+                    <label for="Email">Email</label>
+                    <input 
+                        id="email" 
+                        type="radio"
+                        name="Contact"
+                        value="email"/>
+                        
+                    <label for="Phone">Phone</label>
+                    <input 
+                        id="Phone" 
+                        type="radio"
+                        name="Contact"
+                        value="phone"/>
                 </div>
-                <div class="form-control">  
-                    <label>Date</label>
-                    <input type="date">
-                </div>
-                <div class="form-control">  
-                    <label>Hour:</label>
-                    <input  type="datetime">
+                <div class="date-time-container">  
+                    <div>
+                        <label>Date</label>
+                        <input type="date">
+                    </div>
+                    <div>
+                        <label>Hour:</label>
+                        <input type="time">
+                    </div>
                 </div>
             </fieldset>
         </div>
@@ -82,7 +91,7 @@
             <p class="text-b">Powered by Zillow</p>
         </div>
         <div class="copy-text">
-            <p class="text-privacy"></p>Copyright &copy;2024</p>
+            <p class="text-copyright"></p>Copyright &copy;2024</p>
             <p class="text-privacy">Privacy Policy</p>
         </div>
         <div class="icons">
@@ -100,6 +109,3 @@
 </body>
 </html>
 
-<i class="fa-brands fa-youtube"></i>
-<i class="fa-brands fa-linkedin-in"></i>
-<i class="fa-brands fa-facebook-f"></i>
